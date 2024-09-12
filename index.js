@@ -629,17 +629,13 @@ case 'payment':
 case 'pembayaran':
 case 'pay':
 case 'bayar':{
-let tekssss = `───「  *PAYMENT*  」────
+reply(`*───「  *PAYMENT*  」────
 
 - *Dana :* ${global.dana}
 SS BUKTI TRANSFER
 
-OK, thanks udah order di *${global.namaStore}*
-`
-ramz.sendMessage(from, { image: fs.readFileSync(`./gambar/qris.jpg`),
- caption: tekssss, 
-footer: `${global.ownerName} © 2022`},
-{quoted: msg})
+OK, thanks udah order di *${global.namaStore}**
+`)
 }
 break
 case 'proses':case 'p':{
