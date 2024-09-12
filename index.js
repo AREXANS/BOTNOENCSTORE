@@ -426,7 +426,7 @@ Hi *${pushname} 👋, ini adalah bot topup otomatis yang dirancang untuk kebutuh
 │❏ *menuother*
 ╘───────────────┈ ⳹
 
-*GRUP BOT OFFICIAL :*
+*GRUP AREXANS - TOPUP DIAMOND :*
 * ${global.linkgc}
 `
 ramz.sendMessage(from, {text: menu}, {quoted: fkontak})
@@ -552,7 +552,7 @@ case 'axssosmedown':
 * ${global.linktt}
 *INSTAGRAM :*
 * ${global.linkig}
-*GRUP BOT OFFICIAL :*
+*GRUP AREXANS - TOPUP DIAMOND :*
 * ${global.linkgc}`},
 {quoted: msg})
 break
