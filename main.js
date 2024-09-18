@@ -48,7 +48,7 @@ const path = require('path')
 
  
 async function startramz() {
-const { state, saveCreds } = await useMultiFileAuthState("./arexans.json")
+const { state, saveCreds } = await useMultiFileAuthState("./arexans")
    let { version, isLatest } = await fetchLatestBaileysVersion();
 const ramz = makeWASocket({
 logger: pino({ level: "silent" }),
