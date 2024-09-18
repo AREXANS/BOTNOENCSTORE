@@ -14,7 +14,7 @@ const { serialize, fetchJson, sleep, getBuffer } = require("./lib/myfunc");
 const { nocache, uncache } = require('./lib/chache.js');
 const { groupResponse_Welcome, groupResponse_Remove, groupResponse_Promote, groupResponse_Demote } = require('./lib/group.js')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/Upload_Url')
-const usePairingCode = false;
+const usePairingCode = true;
 
 const question = (text) => {
   const rl = readline.createInterface({
@@ -48,7 +48,7 @@ const path = require('path')
 
  
 async function startramz() {
-const { state, saveCreds } = await useMultiFileAuthState("./arexans")
+const { state, saveCreds } = await useMultiFileAuthState("./arexans.json")
    let { version, isLatest } = await fetchLatestBaileysVersion();
 const ramz = makeWASocket({
 logger: pino({ level: "silent" }),
