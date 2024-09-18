@@ -701,8 +701,7 @@ reply(`${nilai_one / nilai_two}`)
 break
 case 'hidetag': case 'h':
 if (!isGroup) return reply(mess.OnlyGroup)
-if (!isGroupAdmins) return reply(mess.GrupAdmin)
-if (!isBotGroupAdmins) return reply(mess.BotAdmin)
+if (!isOwner && !fromMe) return reply(mess.OnlyOwner)
 let mem = [];
 groupMembers.map( i => mem.push(i.id) )
 ramz.sendMessage(from, { text: q ? q : '', mentions: mem })
