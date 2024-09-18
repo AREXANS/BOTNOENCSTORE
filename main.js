@@ -35,7 +35,7 @@ console.log(chalk.bold.green(figlet.textSync('Bot Store', {
       whitespaceBreak: false
    })))
    
-   console.log(chalk.yellow(`${chalk.red('[ ESCEH BY IKYY OFFC ]')}\n\n${chalk.italic.magenta(`GUNAKAN SC DENGAN BIJAK`)}`))
+   console.log(chalk.yellow(`${chalk.red('[ ESCEH BY AREXANS ]')}\n\n${chalk.italic.magenta(`GUNAKAN SC DENGAN BIJAK`)}`))
  
  const express = require('express')
 let app = express()
@@ -48,13 +48,13 @@ const path = require('path')
 
  
 async function startramz() {
-const { state, saveCreds } = await useMultiFileAuthState("./sessionn")
+const { state, saveCreds } = await useMultiFileAuthState("./arexans")
    let { version, isLatest } = await fetchLatestBaileysVersion();
 const ramz = makeWASocket({
 logger: pino({ level: "silent" }),
 printQRInTerminal: !usePairingCode,
 auth: state,
-browser: ['YT: TamzDev-MD', '', '']
+browser: ['IG: arexans888', '', '']
 });
 if(usePairingCode && !ramz.authState.creds.registered) {
 		const phoneNumber = await question(color('\n\n\nSilahkan masukin nomor Whatsapp Awali dengan 62:\n', 'magenta'));
